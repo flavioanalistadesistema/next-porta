@@ -1,10 +1,10 @@
-import Presente from "../components/Presente";
+import Porta from "../components/Portal";
 
 
 export default function Home() {
   return (
     <div>
-      <Presente />
+      <Porta />
     </div>
   )
 }
