@@ -6,6 +6,7 @@ export default function Porta() {
             <div className={styles.estrutura}>
                 <div className={styles.porta}>
                     <div className={styles.numero}>3</div>
+                    <div className={styles.masaneta}></div>
                 </div>
             </div>
             <div className={styles.chao}></div>
