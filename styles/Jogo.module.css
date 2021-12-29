@@ -12,3 +12,17 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.botoes button {
+    background-color: #c0392c;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 10px 25px;
+}
