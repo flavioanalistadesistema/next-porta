@@ -27,6 +27,10 @@ export default class PortalModel {
         return this.#aberta
     }
 
+    get fechada() {
+        return !this.#aberta
+    }
+
     desselecionar() {
         const selecionada = false
         return new PortalModel(this.numero, this.temPresente, selecionada, this.aberta)

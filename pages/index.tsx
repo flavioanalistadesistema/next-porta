@@ -4,7 +4,7 @@ import {criarPortas, atualizarPorta} from "../functons/portas";
 import PortalModel from "../model/PortalModel";
 
 export default function Home() {
-  const [portas, setPorta] = useState(criarPortas(3, 2))
+  const [portas, setPorta] = useState(criarPortas(4, 3))
 
   function renderizarPorta() {
     return portas.map((porta) => {
