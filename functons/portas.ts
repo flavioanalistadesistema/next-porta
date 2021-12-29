@@ -2,12 +2,11 @@ import PortalModel from "../model/PortalModel"
 
 export function criarPortas(
     qtd: number,
-    selecionada: number
+    portaComPresente: number
 ) {
     return Array.from({length: qtd}, (_, i) => {
         const numeric = i + 1
-        const present = numeric === selecionada
-
+        const present = numeric === portaComPresente
         return new PortalModel(numeric, present)
     })
 }
