@@ -10,7 +10,6 @@ export default function Presente() {
     const router = useRouter()
 
     useEffect(() => {
-        console.log('presente', router?.query.presente)
         setPorta(criarPortas(+router?.query.portas, +router?.query.presente))
     }, [router.query])
 
