@@ -16,7 +16,7 @@ export default function Presente() {
         const qtdePortaValida = porta >= 3 && porta <= 100
         const temPresenteValido = comPresente >= 1 && comPresente <= porta
         setValidar(qtdePortaValida && temPresenteValido )
-    }, [portas])
+    }, [portas, router?.query.portas, router?.query.presente])
 
     useEffect(() => {
         setPorta(criarPortas(+router?.query.portas, +router?.query.presente))
@@ -36,7 +36,7 @@ export default function Presente() {
                 {validar? renderizarPorta() :<h1>Valor inválido</h1>}
             </div>
             <div className={styles.botoes}>
-                <Link href={'/'}>
+                <Link href={'/'} passHref>
                     <button>Reiniciar Jogo</button>
                 </Link>
             </div>
