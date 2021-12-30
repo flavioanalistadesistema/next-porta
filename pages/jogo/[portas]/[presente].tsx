@@ -18,7 +18,7 @@ export default function Presente() {
         const temPresenteValido = comPresente >= 1 && comPresente <= porta
 
         if(!qtdePortaValida) {
-            setMensage('Quantidade de portas dever ser maior que 3')
+            setMensage('Quantidade de portas dever ser igual ou maior que 3')
         }
 
         if(!temPresenteValido) {
